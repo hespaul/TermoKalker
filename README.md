@@ -1,2 +1,0 @@
-# TermoKalker
-Conversor de temperaturas
