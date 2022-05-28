@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TermoKalker | Conversor de Temperaturas</title>
+</head>
+<body>
+<div class="sticky-container">
+	<div class="container">
+		<div class="calculator-area">
+			<h1>TermoKalker</h1>
+			<p>Conversor de Temperaturas</p>
+			<div class="calculator-body">
+				<div class="result-container">
+					<div id="result"></div>			
+				</div>		
+				<div class="enter">
+					<form>
+						<input type="number" id="valor" name="valor" placeholder="Ingrese un valor..." required>
+						<input type="reset" id="ce" name="ce" value="CE">
+					</form>	
+				</div>					
+				<div class="options">
+					<input class="btn" type="button" id="ftoc" value="Fahrenheit a Celsius" onclick="ftoc()">
+					<input class="btn" type="button" id="ctof" value="Celsius a Fahrenheit" onclick="ctof()">
+					<input class="btn" type="button" id="ktoc" value="Kelvin a Celsius" onclick="ktoc()">
+					<input class="btn" type="button" id="ctok" value="Celsius a Kelvin" onclick="ctok()">	
+				</div>				
+			</div>				
+		</div>		
+	</div>
+	<div class="credits">
+		<p>Powered by <b><a href="https://www.twitter.com/_PabloCJ" target="_blank">Pablo Cuevas</a></b></p>	
+	</div>	
+</div>	
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
