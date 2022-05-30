@@ -1,5 +1,8 @@
-# TermoKalker
-# Conversor de temperaturas.
+============
+TermoKalker
+============
+Conversor de temperaturas.
+----------------------------
 __Soporta conversiones de:__
 - Celsius a Fahrenheit
 - Fahrenheit a Celsius
