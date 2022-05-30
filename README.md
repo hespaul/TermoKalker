@@ -1,7 +1,7 @@
 TermoKalker
 ============
 <h4>Conversor de temperaturas.</h4>
-<p><b>Soporta conversiones de:<b></p> 
+<p>Soporta conversiones de:</p> 
   <ul>
     <li>Fahrenheit a Celsius</li>
     <li>Celsius a Fahrenheit</li>
