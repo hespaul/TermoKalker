@@ -53,8 +53,8 @@ function ctok() {
 	if (valorInput == '') {
 		result.innerHTML = '<p style="color: red;">No has ingresado ningún número.</p>'; 	
 	} else {
+		resultado = Number(valorInput) + 273;
 		valor = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
-		resultado = valorInput + 273;
 		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Celsius equivalen a " + resultado + "° Kelvin.</p>";
 	}
 }
