@@ -1,69 +1,71 @@
 ﻿//Conversor de temperaturas.
 var ce = document.getElementById('ce');
 var result = document.getElementById('result');
+const fahrenheitACelsius = document.getElementById('ftoc');
+const CelsiusAfahrenheit = document.getElementById('ctof');
 
-function resetea(){
-	result.innerHTML = "";	
-}
-
-ce.addEventListener('click', resetea);
+const kelvinACelsius = document.getElementById('ktoc');
+const celsiusAKelvin = document.getElementById('ctok');
 
 function ftoc() {
-	var valor = document.getElementById('valor');	
-	valor = valor.value;
-			
-	if (valor == '') {
-		result.innerHTML = '<p style="color: red;">No has ingresado ningún número.</p>';			
-	} else if (valor == 0){
-		result.innerHTML = '<p style="color: red;">El número no puede ser cero.</p>';
+	var valorInput = document.getElementById('valor');
+	valorInput = valorInput.value;
+
+	if (valorInput == '') {
+		result.innerHTML = '<p style="color: red;">No has ingresado ningún número.</p>';		
 	} else {
-		resultado = 100/180 * valor - 32;
+		resultado = 100/180 * valorInput - 32;
 		resultado = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
-		result.innerHTML = "<p><b>Resultado:</b><br> " + valor + "° Fahrenheit equivalen a " + resultado + "° Celsius.</p>";	
+		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Fahrenheit equivalen a " + resultado + "° Celsius.</p>";	
 	}
 }
 
 function ctof() {
-	var valor = document.getElementById('valor');	
-	valor = valor.value;
+	var valorInput = document.getElementById('valor');
+	valorInput = valorInput.value;
 	
-	if (valor == '') {
+	if (valorInput == '') {
 		result.innerHTML = '<p style="color: red;">No has ingresado ningún número.</p>';
-	} else if (valor == 0) {
-		result.innerHTML = '<p style="color: red;">El número no puede ser cero.</p>';
 	} else {
-		resultado = 180/100 * valor + 32;
-		resultado = parseInt(resultado);
-		result.innerHTML = "<p><b>Resultado:</b><br> " + valor + "° Celsius equivalen a " + resultado + "° Fahrenheit.</p>";	
+		resultado = 180/100 * valorInput + 32;
+		resultado = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Celsius equivalen a " + resultado + "° Fahrenheit.</p>";	
 	} 	
 } 
 
 function ktoc() {
-	var valor = document.getElementById('valor');
-	valor = valor.value;
+	var valorInput = document.getElementById('valor');
+	valorInput = valorInput.value;
 	
-	if (valor == '') {
+	if (valorInput == '') {
 		result.innerHTML = '<p style="color: red;">No has ingresado ningún número.</p>';
-	} else if (valor == 0) {
-		result.innerHTML = '<p style="color: red;">El número no puede ser cero.</p>';
 	} else {
-		resultado = valor - 273;
-		resultado = parseInt(resultado);
-		result.innerHTML = "<p><b>Resultado:</b><br> " + valor + "° Kelvin equivalen a " + resultado + "° Celsius.</p>";
+		resultado = valorInput - 273;
+		resultado = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Kelvin equivalen a " + resultado + "° Celsius.</p>";
 	} 	
 }
 
 function ctok() {
-	var valor = document.getElementById('valor');
-	valor = valor.value;
+	var valorInput = document.getElementById('valor');
+	valorInput = valorInput.value;
 	
-	if (valor == '') {
+	if (valorInput == '') {
 		result.innerHTML = '<p style="color: red;">No has ingresado ningún número.</p>'; 	
-	} else if (valor == 0) {
-		result.innerHTML = '<p style="color: red;">El número no puede ser cero.</p>';	
 	} else {
-		valor = parseInt(valor)
-		resultado = valor + 273;
-		result.innerHTML = "<p><b>Resultado:</b><br> " + valor + "° Celsius equivalen a " + resultado + "° Kelvin.</p>";
+		valor = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+		resultado = valorInput + 273;
+		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Celsius equivalen a " + resultado + "° Kelvin.</p>";
 	}
 }
+
+function resetea(){
+	result.innerHTML = "";
+}
+
+fahrenheitACelsius.addEventListener('click', ftoc);
+CelsiusAfahrenheit.addEventListener('click', ctof);
+kelvinACelsius.addEventListener('click', ktoc);
+celsiusAKelvin.addEventListener('click', ctok);
+
+ce.addEventListener('click', resetea);
