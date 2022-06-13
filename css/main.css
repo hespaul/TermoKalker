@@ -26,16 +26,24 @@ h1{
 	color: white;
 }
 .calculator-area{
+<<<<<<< HEAD
 	height: 320px;
+=======
+>>>>>>> v1.1
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+<<<<<<< HEAD
 	transform: scale(1.2, 1.2);
+=======
+	/* transform: scale(1.2, 1.2); */
+>>>>>>> v1.1
 }
 .calculator-area > p{
 	padding: 8px;
 	color: white;
+<<<<<<< HEAD
 }
 .calculator-body{
 	width: 360px;
@@ -55,6 +63,41 @@ h1{
 	width: 100%;
 	height: 100px;
 	font-size: 16px;
+=======
+	font-size: 12px;
+}
+.calculator-area h1 > span{
+	font-size: 12px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-left: 4px;
+}
+.calculator-body{
+	width: 320px;
+	border-radius: 8px;
+	border: 1px solid #343434;
+	box-shadow: 0px 0px 16px -8px;
+	padding: 8px;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	border-radius: 32px;
+}
+.enter{
+	height: 100%;
+	
+}
+.enter > form{
+	width: 100%;
+	height: 60px;
+	display: flex;
+
+}
+.result-container{
+	width: 100%;
+	height: 200px;
+	font-size: 20px;
+>>>>>>> v1.1
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -66,11 +109,18 @@ h1{
 .result-container p {
 	color: green;
 }
+<<<<<<< HEAD
+=======
+#result{
+	padding: 8px;
+}
+>>>>>>> v1.1
 #result b{
 	font-size: 12px;
 }
 #valor{
 	color: whitesmoke;
+<<<<<<< HEAD
 }
 .options{
 	width: 100%;
@@ -89,6 +139,21 @@ h1{
 }
 #ce{
 	color: whitesmoke;
+=======
+	width: 100%;
+}
+.options{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#ce{
+	color: whitesmoke;
+	width: 40px;
+>>>>>>> v1.1
 }
 #ce:hover{
 	cursor: pointer;
@@ -96,10 +161,16 @@ h1{
 .btn{
 	background-color: green;
 	font-size: 16px;
+<<<<<<< HEAD
 }
 .btn:nth-child(even){
 	border-left: 1px solid black;
 }
+=======
+	border-radius: 8px;
+}
+
+>>>>>>> v1.1
 .btn:hover{
 	cursor: pointer;
 	color: white;
@@ -110,12 +181,21 @@ input[type="number"]:focus{
 }
 input{
 	border: none;
+<<<<<<< HEAD
 	padding: 16px;
 	font-size: 20px;
 	background-color: #343434;
 }
 ::placeholder{
 	font-size: 14px;
+=======
+	font-size: 20px;
+	background-color: #343434;
+	padding: 8px;
+}
+::placeholder{
+	font-size: 20px;
+>>>>>>> v1.1
 }
 .credits{
 	width: 100%;
@@ -137,7 +217,10 @@ input{
 		transform: none;
 	}
 }
+<<<<<<< HEAD
 
 .disclaimer{
 	display: none; !important
 }
+=======
+>>>>>>> v1.1

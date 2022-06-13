@@ -16,7 +16,11 @@ function ftoc() {
 	} else {
 		resultado = 100/180 * valorInput - 32;
 		resultado = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+<<<<<<< HEAD
 		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Fahrenheit equivalen a " + resultado + "° Celsius.</p>";	
+=======
+		result.innerHTML = "<p><b>Resultado:</b><br>" + valorInput + "° Fahrenheit equivale a <br> " + resultado + "° Celsius.</p>";	
+>>>>>>> v1.1
 	}
 }
 
@@ -29,7 +33,11 @@ function ctof() {
 	} else {
 		resultado = 180/100 * valorInput + 32;
 		resultado = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+<<<<<<< HEAD
 		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Celsius equivalen a " + resultado + "° Fahrenheit.</p>";	
+=======
+		result.innerHTML = "<p><b>Resultado:</b><br>" + valorInput + "° Celsius equivale a <br>" + resultado + "° Fahrenheit.</p>";	
+>>>>>>> v1.1
 	} 	
 } 
 
@@ -42,7 +50,11 @@ function ktoc() {
 	} else {
 		resultado = valorInput - 273;
 		resultado = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+<<<<<<< HEAD
 		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Kelvin equivalen a " + resultado + "° Celsius.</p>";
+=======
+		result.innerHTML = "<p><b>Resultado:</b><br>" + valorInput + "° Kelvin equivale a <br>" + resultado + "° Celsius.</p>";
+>>>>>>> v1.1
 	} 	
 }
 
@@ -55,7 +67,11 @@ function ctok() {
 	} else {
 		resultado = Number(valorInput) + 273;
 		valor = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(resultado);
+<<<<<<< HEAD
 		result.innerHTML = "<p><b>Resultado:</b><br> " + valorInput + "° Celsius equivalen a " + resultado + "° Kelvin.</p>";
+=======
+		result.innerHTML = "<p><b>Resultado:</b><br>" + valorInput + "° Celsius equivale a <br>" + resultado + "° Kelvin.</p>";
+>>>>>>> v1.1
 	}
 }
 
