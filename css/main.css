@@ -3,7 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: tahoma;
-	/*outline: 1px solid black;*/
 }
 .sticky-container{
 	display: flex;
