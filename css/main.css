@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: tahoma;
+}
+.sticky-container{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.container{
+	width: 100%;
+	height: 100%	;
+	padding: 12px 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4f4f4f;
+	flex: 1;	
+}
+h1{
+	font-size: 24px;
+	text-align: center;
+	color: white;
+}
+.calculator-area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* transform: scale(1.2, 1.2); */
+}
+.calculator-area > p{
+	padding: 8px;
+	color: white;
+	font-size: 12px;
+}
+.calculator-area h1 > span{
+	font-size: 12px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-left: 4px;
+}
+.calculator-body{
+	width: 320px;
+	border-radius: 8px;
+	border: 1px solid #343434;
+	box-shadow: 0px 0px 16px -8px;
+	padding: 8px;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	border-radius: 32px;
+}
+.enter{
+	height: 100%;
+	
+}
+.enter > form{
+	width: 100%;
+	height: 60px;
+	display: flex;
+
+}
+.result-container{
+	width: 100%;
+	height: 200px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-color: #000;
+	text-align: center;
+}
+.result-container p {
+	color: green;
+}
+#result{
+	padding: 8px;
+}
+#result b{
+	font-size: 12px;
+}
+#valor{
+	color: whitesmoke;
+	width: 100%;
+}
+.options{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#ce{
+	color: whitesmoke;
+	width: 40px;
+}
+#ce:hover{
+	cursor: pointer;
+}
+.btn{
+	background-color: green;
+	font-size: 16px;
+	border-radius: 8px;
+}
+
+.btn:hover{
+	cursor: pointer;
+	color: white;
+	background-color: #000;
+}
+input[type="number"]:focus{
+	outline: none;
+}
+input{
+	border: none;
+	font-size: 20px;
+	background-color: #343434;
+	padding: 8px;
+}
+::placeholder{
+	font-size: 20px;
+}
+.credits{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #343434;
+	padding: 8px;
+}
+.credits p{
+	color: lightgray;
+	font-size: 12px;
+}
+.credits a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+@media screen and (max-width: 640px){
+	.calculator-area{
+		transform: none;
+	}
+}
+
+
